@@ -9,13 +9,12 @@ class apiConstants:
 
     @staticmethod
 
-    def url_create_boking():
+    def url_create_booking():
         return "https://restful-booker.herokuapp.com/booking"
 
     @staticmethod
     def url_create_token():
         return "https://restful-booker.herokuapp.com/auth"
     
-    def url_put_patch_del_request(self,booking_id):
-        return return "https://restful-booker.herokuapp.com/" +str(self.booking_id)
-"
+    def url_patch_put_delete(self,booking_id):
+        return "https://restful-booker.herokuapp.com/booking/" + str(booking_id)

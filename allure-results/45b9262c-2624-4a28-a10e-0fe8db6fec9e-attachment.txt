@@ -1,0 +1,3 @@
+[32mINFO    [0m crud.test_create_booking:test_create_booking.py:19 Response Text: {"bookingid":4949,"booking":{"firstname":"Kalyani","lastname":"Potu","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}}
+[32mINFO    [0m crud.test_create_booking:test_create_booking.py:20 Content-Type: application/json; charset=utf-8
+[32mINFO    [0m crud.test_create_booking:test_create_booking.py:21 Status Code: 200

@@ -1,34 +1,36 @@
 # class or functions:
-def common_headers_json(self):
-    headers={
-        "Content_Type":"Äpplication/json"
+class Util(object):
+
+    def common_headers_json(self):
+        headers={
+        "Content-Type": "application/json"
         }
-    return headers
+        return headers
 
-def common_headers_xml(self):
-    headers={
-        "Content_Type":"Äpplication/xml"
+    def common_headers_xml(self):
+        headers={
+            "Content_Type":"application/xml"
         }
-    return headers
+        return headers
 
 
-def common_headers_put_patch_delete_basic_auth():
-    headers={
-        "Content-Type":"Application/json",
+    def common_headers_put_patch_delete_basic_auth():
+        headers={
+        "Content-Type":"application/json",
         "Authorization":"Basic YWRtaW46cGFzc3dvcmQxMjM="
     }
-    return headers
+        return headers
 
-def header_put_patch_del_cookie(token):
-    headers={
-        "Content-Type":"Application/json",
+    def header_put_delete_patch_cookie(self, token):
+        headers={
+        "Content-Type":"application/json",
         "Cookie":"Token="+str(token)
     }
-    return headers
+        return headers
 
-def read_scv_file():
-    pass
-def read_env_var_file():
-    pass
+    def read_scv_file():
+        pass
+    def read_env_var_file():
+        pass
 
-util=Utils.common_headers_json()
+#util=Utils.common_headers_json()
