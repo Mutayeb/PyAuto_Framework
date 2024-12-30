@@ -64,5 +64,7 @@ class TestCRUDBooking(object):
             auth=None,
             in_json=False
         )
-        verify_status_code(response_data=response, expect_data=201)
+        verify_status_code(response_data=response, expect_data =201)
         verify_response_delete(response=response.text)
+
+
