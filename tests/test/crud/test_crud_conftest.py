@@ -33,6 +33,8 @@ class TestCrudBooking():
     @allure.title("Test CRUD operation Delete(DELETE)")
     @allure.description("Verify booking gets deleted with the booking ID and Token.")
     def test_delete_booking_id_token(self,create_token,get_booking):
+        logging.basicConfig(level=logging.INFO)
+        logger=logging.getLogger(__name__)
         booking_id=get_booking
         token=create_token
         response=delete_request(
@@ -41,7 +43,7 @@ class TestCrudBooking():
             auth=None,
             in_json=False
         )
-
+        logger.info(f"Response Text :" +response)
         verify_status_code(response_data=response,expect_data=201)
 
         verify_response_delete(response=response.text)
