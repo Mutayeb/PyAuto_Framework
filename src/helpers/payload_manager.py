@@ -7,8 +7,8 @@ faker = Faker()
 
 def payload_create_booking():
     payload = {
-        "firstname": "Kalyani",
-        "lastname": "Potu",
+        "firstname": "Manasa",
+        "lastname": "P.",
         "totalprice": 111,
         "depositpaid": True,
         "bookingdates": {
